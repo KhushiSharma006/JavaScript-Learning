@@ -21,8 +21,11 @@
  const myFunc = function(){
     console.log("Hello I am a Function.")
  }
- 
+
  console.log(heros)
  console.log(myObj)
  console.log(myFunc())
- 
+
+
+ // Memory: Stack=> Primitive, Heap=>Non-primitive
+   
