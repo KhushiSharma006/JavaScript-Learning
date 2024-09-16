@@ -28,11 +28,13 @@ console.log(Math.min(5,6,8,9));
 console.log(Math.max(10,100,20,200));
 
 console.log(Math.random()); //generate ramdom num b/w  0 & 1
+
 console.log(Math.floor(Math.random()*10) +1); 
 //generat ramdom num b/w  1 & 10
 
 
-//to generate ramdom number b/w min and max
+//to generate ramdom number b/w 2 numbers (min and max)
 const min =10;
 const max = 20;
+
 console.log(Math.floor(Math.random()*(max-min+1))+min);
