@@ -5,17 +5,16 @@
                         
  */
 
- 
  const id1 = Symbol('123')
  const id2 = Symbol('123')
  //console.log(id1 == id2);
 
- const heros = ["Superman", "Ironman", "Batman"];
+ const heros = ["Superman", "Ironman", "Batman","Spiderman"];
 
  let myObj  = {
     name : "Khushi",
     age: 18,
-    city: "Kanpur"
+    city: "Kanpur",
  }
 
  const myFunc = function(){
