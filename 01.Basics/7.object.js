@@ -96,8 +96,18 @@ const regularUser ={
  //console.log(Object.entries(tinderUser));
 
  //to check property exist or not
- console.log(tinderUser.hasOwnProperty('isLogged'));
+ //console.log(tinderUser.hasOwnProperty('isLogged'));
 
 
+// --------Destructuring of Object-------
+
+const course = {
+    coursename:"JS in 7 days",
+    price:"your time",
+    courseInstructor:"Code aur Chai"
+}
+
+const {courseInstructor : instructor} = course
+console.log(instructor);;
 
  
