@@ -1,4 +1,4 @@
-//Immediately Invoked Function XPathExpression (IIFE) : used to avoid the pollution from the global scope variables
+//Immediately Invoked Function PathExpression (IIFE) : used to avoid the pollution from the global scope variables
 //(funcDef)(funcCall)
 
 (function greet(){
