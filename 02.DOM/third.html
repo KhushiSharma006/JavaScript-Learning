@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        html{
+            background-color: black;
+            color: aquamarine;
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <ul class="language">    
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>    
+  /*
+  //method 1 :(traverse whole tree to append an element)
+  function addLang(langName) {
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`
+    document.querySelector('.language')
+    appendChild(li) 
+  }
+
+  addLang("C++")
+  addLang("python")
+  addLang("java")
+  */
+
+  //Method 2 (optimized way)
+  function addLang2(langName){
+    const li = document.createElement('li');
+    li.append(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li);
+  }
+  addLang2("Node JS")
+
+  //Editing
+  
+
+</script>
+</html>
+
+// for projects 
+//https://stackblitz.com/edit/dom-project-chaiaurcode-9qrwnq?file=1-colorChanger%2Fchaiaurcode.js,1-colorChanger%2Findex.html
+
+// for their solution chode 
+//https://github.com/hiteshchoudhary/js-hindi-youtube/blob/main/07_projects/projectsset1.md
