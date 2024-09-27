@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeInterval</title>
+</head>
+
+<body>
+    <h1>Set Time Interval</h1>
+    <button id="btn">STOP</button>
+</body>
+<script>
+
+//    TASK: change the h1 after a interval if not clicked on stop button 
+
+
+//setInterval(console.log("LEGEND"),10000);
+
+    const changeText =  function(){
+        document.querySelector('h1').innerHTML = "Yey! you got it. ";
+      
+    }
+    const changeH1 = setInterval(changeText,3000);
+     
+    document.querySelector('#btn').addEventListener('click', function(){
+            clearTimeout(changeH1);
+            console.log("Stopped!");
+            
+    });
+
+
+</script>
+</html>

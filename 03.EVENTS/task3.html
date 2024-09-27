@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval </title>
+</head>
+<body>
+    <h1>Set Interval</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+
+<script>
+    const changes = function(){
+        document.querySelector('#start').addEventListener('click', function(){
+            document.querySelector('h1').innerHTML = "STARTED";
+            console.log("Good Job!", new Date);
+            
+        })
+    }
+
+    const start = setInterval(changes,2000);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(start);
+        document.querySelector('h1').innerHTML = "STOPPED";
+        console.log("You clicked on Stop button.");
+    })
+</script>
+</html>
