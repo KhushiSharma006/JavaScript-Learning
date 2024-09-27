@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <ul  id="images">
+        <li><img id="img1" width="200px"  src="https://picsum.photos/seed/picsum/200/300"></li>
+        <li><img id="img2" width="200px" src="https://picsum.photos/id/870/200/300?grayscale&blur=2"></li>
+        <li><img id="img3" width="200px" src="https://picsum.photos/200/300?random=2"></li>
+
+    </ul>
+</body>
+
+<script>
+    /// Task: Whe you click on an image inside ul it will disappear
+    document.querySelector('#images').addEventListener('click', function(e){
+       //console.log( e.target.parentNode);
+       //console.log( e.target.tagName);
+       //target(li)parent = ul
+       if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+
+       }
+      
+       
+    })
+</script>
+</html>
