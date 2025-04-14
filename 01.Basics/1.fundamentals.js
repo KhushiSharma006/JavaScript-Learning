@@ -7,9 +7,9 @@ console.log("Hey! What's up guys.")
 
 const a = 5.5
 let b = "abc"
-var c = 464646 ;// dont use because of issue in block scope and functional scope  (used in older version of JS)
-let d;    //typeof(d)=undefined
-let e = null; //typeof(e)=object
+var c = 464646 ;// dont use var because of issue in block scope and functional scope  (used in older version of JS)
+let d;    //***typeof(d)=undefined
+let e = null; //**typeof(e)=object
 
 //console.table([a,b,c,d,e])
 
