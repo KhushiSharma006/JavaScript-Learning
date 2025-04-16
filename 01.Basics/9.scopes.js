@@ -1,4 +1,6 @@
+
 //inner funtion can access the variables from outer funtion but outer funtion can not
+
 /*
 function one (){
     let num1 = 20
@@ -14,15 +16,19 @@ one()
 */
 
 /*
-//--------Interesting------
-console.log(addone(4));
+//--------Interesting--------
+
+1.delclaration 1
+console.log(addone(4)); // runs fine
 
 function addone(num){
     return num+1
 }
 
 
+2. declaration 2
 //console.log(addtwo(4));//cant call function before declaration
+
 const addtwo = function addtwo(num){
     return num+2
 }

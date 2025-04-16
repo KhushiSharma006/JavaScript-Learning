@@ -59,13 +59,13 @@ const flatArr = array.flat(Infinity);//you can give exact depth
 
 console.log(Array.isArray("JavaScript"));
 console.log(Array.from("JAVASCRIPT"));
-console.log(Array.from({name:"Khushi"}));//Interesting (obj is not converting into array)
+console.log(Array.from({name:"Khushi"}));//Interesting (obj can not be convert into array)
 
 let s1 = 100
 let s2= 200
 let s3 = 300
 console.log(Array.of(s1,s2,s3));
-
+//create an array having elements s1, s2, s2
 
 
 

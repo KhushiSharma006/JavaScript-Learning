@@ -20,7 +20,7 @@ user.age = 15;
 user.welcomeMessage()
 
 console.log(this);
-*/
+*/ 
 
 //NOTE:"this" can be used in object only
 
