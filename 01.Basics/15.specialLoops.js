@@ -1,5 +1,7 @@
 
-//------------ for of Loop-------------
+// Special Loops: Array specific loops
+
+// ------------ for of Loop-------------
 
 const greetings = "Hello World!"
 
@@ -9,7 +11,9 @@ for (const greet of greetings) {
 }
 
 
-//map => contains unique element
+/*map => map objects are collecyion of key:value pair
+         contains unique element
+*/
 
 const map = new Map()
 map.set("IN", "India")
@@ -18,6 +22,7 @@ map.set("UK", "United Kingdom")
 map.set("IN", "India")
 
 //console.log(map)
+
 /*
 for (const [key,value] of map) {
     console.log(key, ':' , value);
@@ -27,7 +32,9 @@ for (const [key,value] of map) {
 
 const myObj = {
     game1:"BGMI",
-    game2 :"GOT"
+    game2 :"GOT",
+    game3:"RDR",
+    game4:"Last of us"
 }
 
 /*
@@ -47,7 +54,7 @@ for (const key in myObj) {
 }
 
 //in array
-const prog = ["html", "css", "js"];
+const prog = ["html", "css", "js", "react"];
 for (const key in prog) {
       //console.log(key);        // in for in loop key will return keys (indexes) of an array
       //console.log(prog[key]);
@@ -62,8 +69,9 @@ for (const key in prog) {
     */
 
  //---------------## For each loop ##----------------
+ // a higher order function
   
-//  prog.forEach( function(val){
+//  prog.forEach( function(val){      // a callback function
 //     console.log(val);
 //  } )
 
@@ -76,7 +84,7 @@ for (const key in prog) {
 //  }
 //  prog.forEach(printMe);
 
-// prog.forEach(( item, index, arr)=>{
+// prog.forEach(( item, index, arr)=>{  //multiple parameters
 //         console.log(item, index, arr);
 // } )
 
@@ -103,7 +111,7 @@ const familyGamer = [
 ]
 
 familyGamer.forEach( (item) =>{
-    console.log(item.player)
+    console.log(item.player);
 })
     */
 
@@ -117,13 +125,19 @@ const values =  prog.forEach( (item)=>{
 console.log(values);
 */
 
-// but filter can
+
+
+// but filter can return values
+
 const nums = [1,2,3,4,5,6,7,8,9,10]
 
-//const numValues = nums.filter((num) => num>4)
+//const numValues = nums.filter((num) => num>4) //(no scope=> directly return)
+
 //or
+
 /*const numValues = nums.filter((num) =>{
-    return num>4})
+    return num>4; //(use reuturn keyword in new scope)
+})
  */
 // console.log(numValues);
 
@@ -133,7 +147,7 @@ const numValues = nums.map( (num) => { return num+10})
 console.log(numValues);
 */
 
-//---------------chaining---------
+//-----------chaining---------
  
 const numValues = nums
                       .map( (num) => num*10 )

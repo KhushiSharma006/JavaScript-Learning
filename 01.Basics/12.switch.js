@@ -1,5 +1,5 @@
 
-const day =0
+const day = 5
 
 switch (day) {
     case 1:

@@ -60,7 +60,7 @@ const add = (num1, num2) =>{
 //const add = (num1, num2) => num1+num2
 //or
 //const add = (num1, num2) => (num1+num2)
-//const add = (num1, num2) => ({name:"khushi"})
+//const add = (num1, num2) => ({name:"khushi"}) // used in react
 
 //console.log(add(10,20));
 

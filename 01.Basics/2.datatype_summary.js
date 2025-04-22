@@ -18,7 +18,7 @@
  let myObj  = {
     name : "Khushi",
     age: 18,
-    city: "Kanpur",
+    city: "Lucknow",
  }
 
 

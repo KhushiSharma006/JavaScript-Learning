@@ -3,7 +3,7 @@
 
 (function greet(){
     console.log(`Hello JS learner`);
-})();//semicolon is necessary 
+})();//semicolon is necessary when you write 2 consecutive IIFE
 
 
 //named IIFE
@@ -15,3 +15,5 @@
 ((name) => {
     console.log(`named IIFE with parameter -${name}`);
 })('khushi');
+
+
