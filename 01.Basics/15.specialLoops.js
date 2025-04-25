@@ -147,11 +147,13 @@ const numValues = nums.map( (num) => { return num+10})
 console.log(numValues);
 */
 
-//-----------chaining---------
+//-----------Chaining---------
+// using multiple methods together
  
 const numValues = nums
                       .map( (num) => num*10 )
                       .map( (num) => num+1)
-                      .filter( (num) =>num>=40)
+                      .filter( (num) => num >= 10)
 
 console.log(numValues);
+
