@@ -7,7 +7,7 @@
     <style>
         html{
             background-color: rgb(0, 0, 0);
-            color:rgb(225, 229, 233);
+            color:rgb(56, 12, 12);
         }
 
     </style>
@@ -22,17 +22,22 @@
   console.log(div);
   div.className = 'main'
   div.id = Math.round(Math.random()*10+1);
+
   div.setAttribute("title", "DOM with me")
-  div.style.backgroundColor = "green"
+  div.style.backgroundColor = "gray"
   div.style.padding = "20px"
  
-//Method 1:
-//   div.innerHTML = "Hello Whats up Guys!"
+ 
+//Method 1: passes the reference and then overwritten the previous values
+  div.innerHTML = "Hello Whats up Guys!"
 
-//Method 2:
- const addText = document.createTextNode("DOM manipulation with Khushi :)")
- div.appendChild(addText)
- document.body.appendChild(div)
+//Method 2: directly set new values
+/*
+const addText = document.createTextNode("JavaScript with Me.");
+div.appendChild(addText);*/
+
+//attaching all the changes in document 
+document.body.appendChild(div)
   
 
 </script>

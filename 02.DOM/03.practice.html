@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+
+    <style>
+      html {
+        background-color: black;
+        color: aquamarine;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+
+  <script>
+    /*
+  //method 1 :(traverse whole tree to append an element)
+  function addLang(langName) {
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`
+    document.querySelector('.language').appendChild(li) 
+  }
+
+  addLang("C++") 
+  addLang("python")
+  addLang("java")
+  */
+
+    //Method 2 (optimized way)
+    function addLang2(langName) {
+      const li = document.createElement("li");
+      li.append(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+    addLang2("ExpressJS");
+    addLang2("React");
+
+
+
+
+    //---------EDIT----------
+    const secLang = document.querySelector("li:nth-child(2)");
+    // console.log(secLang);
+
+    //MEethod 1
+    //secLang.innerHTML = "NodeJS";
+
+
+   //Method 2 (optimized)
+    const newLi = document.createElement("li");
+    newLi.textContent = "MongoDB";
+    secLang.replaceWith(newLi);
+
+  //Method 3
+   const firstLang = document.querySelector("li:nth-child(1)");
+   firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+
+   //---------REMOVE--------
+   const lastLang = document.querySelector('li:last-child');
+   //lastLang.remove();
+
+
+  </script>
+</html>
