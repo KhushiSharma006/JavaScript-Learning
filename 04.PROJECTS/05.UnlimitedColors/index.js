@@ -3,7 +3,7 @@ const randomColor = function(){
     const hex = '01234567890ABCDEF';
     let color = '#';
     for (let i = 0; i < 6; i++) {
-        color += hex[Math.floor(Math.random()*16)];        
+        color += hex[Math.floor(Math.random()*16)];//to select random postion form hex          
     }
     console.log(color);
     return color;    
@@ -12,11 +12,11 @@ const randomColor = function(){
 let intervalID;
 
 const startColorChanging = function(){
-    if(!intervalID){
+    if(!intervalID){ 
       const changebgColor = function(){
         document.body.style.backgroundColor = randomColor();
       }
-      intervalID = setInterval(changebgColor,1500);
+      intervalID = setInterval(changebgColor,1000);
    }
     
 }

@@ -14,11 +14,21 @@
 
 //    TASK: change the h1 after a interval if not clicked on stop button 
 
+//setTimeout : perform task once
+// setInterval : repeat task within an interval
+// clearTimeOut: 
 
-//setInterval(console.log("LEGEND"),10000);
+    const sayMyName = function(){
+        console.log("legendKS");
+    }
+
+    //setTimeout(sayMyName, 2000);
+    //setInterval(sayMyName, 2000);
+
+
 
     const changeText =  function(){
-        document.querySelector('h1').innerHTML = "Yey! you got it. ";
+        document.querySelector('h1').innerHTML = "Yey! You changed me. ";
       
     }
     const changeH1 = setInterval(changeText,3000);
